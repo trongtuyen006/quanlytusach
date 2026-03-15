@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đăng ký</title>
+
+    <link rel="stylesheet" href="/stylesheets/signup.css" />
+  </head>
+
+  <body>
+    <div class="signup-container">
+      <h2 class="signup-title">Đăng ký tài khoản</h2>
+
+      <form action="/register" method="POST">
+        <label>Email</label>
+        <input class="signup-input" type="email" name="email" required />
+
+        <label>Password</label>
+        <input class="signup-input" type="password" name="password" required />
+
+        <label>Confirm Password</label>
+        <input
+          class="signup-input"
+          type="password"
+          name="confirm_password"
+          required
+        />
+
+        <button class="signup-btn" type="submit">Đăng ký</button>
+      </form>
+
+      <p class="signup-link">
+        <a href="/login">Đã có tài khoản? Đăng nhập</a>
+      </p>
+    </div>
+  </body>
+</html>
